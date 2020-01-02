@@ -1,0 +1,22 @@
+{{define "title"}} new post {{end}}
+{{define "body"}} 
+<h1>
+  Create a new post
+</h1>
+<form action="/save/" method="POST">
+  <div>
+  <label for="title">
+   Post Title 
+  </label> <br>
+  <input type="text" name="title" value="{{.Title}}"><br>
+  <label for="body">
+    Post Body:
+  </label> <br>
+  <textarea name="body" rows=20 cols=80>{{.Body}}</textarea>  
+  </div>
+  <div>
+    <input type="submit" value="save">
+  </div>
+</form>
+
+{{end}}

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono&display=swap");
+.container {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100vh;
+  background-color: #343434;
+  font-family: "Inconsolata", monospace;
+  color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 0px 20px; }
+  .container h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-family: "Roboto Mono", monospace;
+    align-self: center;
+    color: #d7005f; }
+  .container a {
+    color: #EEEEEE; }
+    .container a:hover {
+      color: #d7005f; }
+  .container .new-post-link {
+    align-self: flex-end; }
+  .container #anchor-span {
+    display: flex;
+    justify-content: flex-end; }
+
+body {
+  background: repeating-linear-gradient(45deg, #121212 0 50px, #1A1A1A 50px 100px);
+  min-height: 100vh;
+  margin-top: 0px;
+  margin-bottom: 0px; }

@@ -1,0 +1,12 @@
+{{define "title"}} Zoey's Blog {{end}}
+{{define "body"}}
+<h1>
+  Blog Posts
+</h1>
+{{range $index, $element := .}}
+<p><b><a href="/post/{{$element.ID}}">{{$element.Title}}</a></b> - {{$element.Body}}</p>
+{{end}}
+<span id="anchor-span">
+  <a class="new-post-link" href="/new_post/">Create a new post</a> 
+</span>
+{{end}}
